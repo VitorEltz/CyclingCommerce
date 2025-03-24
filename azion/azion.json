@@ -1,0 +1,58 @@
+{
+  "name": "CyclingCommerce",
+  "bucket": "CyclingCommerce",
+  "preset": "react",
+  "env": "production",
+  "prefix": "20250324165841",
+  "not-first-run": true,
+  "function": {
+    "id": 41622,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 39391,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1742835938,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1742834833,
+    "name": "CyclingCommerce",
+    "domain_name": "qb83210o7s.map.azionedge.net",
+    "url": "https://qb83210o7s.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 201989,
+      "origin-key": "7d0827a7-b7c5-4da2-b188-924d91f9b9d4",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 384904,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 384905,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 384906,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
